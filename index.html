@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!--- ICS2O-TEST --->
+<!--- ICS2O-Query Strings --->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My first PWA" />
+    <meta name="description" content="Query Strings" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Alex Nelson" />
     <meta name="theme-color" content="#FFFFFF" />
@@ -50,7 +50,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <!-- Title -->
-    <title>And Or statements</title>
+    <title>Query Strings</title>
   </head>
   <body>
     <!-- Code linking JS and reference to MDL -->
@@ -60,38 +60,25 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Discount Eligibility</span>
+          <span class="mdl-layout-title">Volume of a sphere</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <!-- Explination -->
+        <img src="./images/VolumeofSphere.png"  alt="Volume of Sphere png"  length="100" width="500">
+<!--    Explanation    -->
         <h5>
-          Students between the age of 13 and 20 get a student discount on Monday
-          and Tuesday. Please select a day and your age to see if you are
-          eligible for a student discount.
+          This program takes inputs from the url and does some calculations on them. In this case it will take the radius(r) and display it. Simply type /?r=1 at the end of your URL to see.
         </h5>
-        <!-- Textfield code -->
-        <form action="#">
-          Age:
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="age"
-            />
-            <!--This will control the textfields error message and label-->
-            <label class="mdl-textfield__label" for="age">Age</label>
-            <span class="mdl-textfield__error">Numbers Only!</span>
-          </div>
-        </form>
-        <!-- Raised button with ripple and JS function -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="TEST()"
-        >
-          TEST
-        </button>
+        <br>
+<!--     Formula       -->
+        <h5>
+          Formula: 
+        </h5>
+        <h5>
+          4 / 3 x π x radius
+        </h5>
+<!--     Output       -->
+        <div id="dimension"></div>
         <div id="output"></div>
       </main>
     </div>
